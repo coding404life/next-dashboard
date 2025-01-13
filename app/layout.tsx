@@ -9,8 +9,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <SpeedInsights />
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <head>
+        <title>Next.js</title>
+      </head>
+
+      <body className={`${inter.className} antialiased`}>
+        {children}
+        <SpeedInsights />
+      </body>
     </html>
   );
 }
