@@ -34,11 +34,11 @@ export function Card({
   title,
   value,
   type,
-}: {
+}: Readonly<{
   title: string;
   value: number | string;
   type: 'invoices' | 'customers' | 'pending' | 'collected';
-}) {
+}>) {
   const Icon = iconMap[type];
 
   return (
